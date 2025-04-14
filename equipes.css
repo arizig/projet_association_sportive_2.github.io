@@ -1,0 +1,52 @@
+/* Fichier spécifique à la page des équipes : equipes.css */
+
+.equipes ul {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+/* Section des équipes */
+.equipes p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Section Nos Équipes */
+.liste-equipes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.equipe {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.equipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.equipe h3 {
+    color: #008CBA;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .liste-equipes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .equipe {
+        width: 30%;
+    }
+}
+
